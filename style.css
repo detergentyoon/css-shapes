@@ -1,0 +1,73 @@
+.bookmark {
+  width: 0;
+  height: 120px;
+  border: 60px solid #ca3c3c;
+  border-top: 0;
+  border-bottom: 36px solid transparent;
+}
+
+.pacMan {
+  width: 0px;
+  height: 0px;
+  border: 70px solid #f7ec59;
+  border-right-color: transparent;
+  border-radius: 70px;
+}
+
+.diamond {
+  width: 50px;
+  position: relative;
+  border-width: 0 30px 30px 30px;
+  border-style: solid;
+  border-color: transparent;
+  border-bottom-color: rgb(123,204,241,.5);
+}
+.diamond:before {
+  content: "";
+  position: absolute;
+  border-width: 75px 55px 0 55px;
+  border-style: solid;
+  border-color: transparent;
+  border-top-color: rgb(123,204,241,.5);
+  top: 30px;
+  left: -30px;
+}
+
+.hexagram {
+  position: relative;
+  height: 0;
+  width: 0;
+  border-bottom: 100px solid #f7ec59;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent
+}
+.hexagram:after {
+  position: absolute;
+  border-top: 100px solid #f7ec59;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  content: "";
+  top: 30px;
+  left: -50px;
+}
+
+.heart {
+  position: relative;
+  height: 160px;
+  width: 100px;
+  background: #d16ba5;
+  border-radius: 200px 200px 0 0;
+  transform: rotate(45deg);
+  left: 65px;
+}
+.heart::before {
+  content: "";
+  position: absolute;
+  background: #d16ba5;
+  height: 160px;
+  width: 100px;
+  transform: rotate(-90deg);
+  border-radius: 200px 200px 0 0;
+  left: -30px;
+  top: 30px;
+}
